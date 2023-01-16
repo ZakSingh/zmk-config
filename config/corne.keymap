@@ -54,8 +54,8 @@
                         bindings = <
    &kp TAB   &trans  &trans     &kp C_BRI_DN   &kp C_BRI_UP  &trans      &trans    &trans    &trans  &trans    &trans  &trans
    &kp ESC   &trans  &kp C_MUTE &kp C_VOL_DN   &kp C_VOL_UP  &trans      &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT &trans  &trans
-   &kp LCTRL &trans  &kp C_PP   &kp C_PREV     &kp C_NEXT    &trans      &trans    &trans    &trans  &trans    &trans  &kp ALT
-                                  &kp LGUI &kp BSPC &kp SPACE        &kp RET &kp LSHFT &kp HYP
+   &kp LCTRL &trans  &kp C_PP   &kp C_PREV     &kp C_NEXT    &trans      &trans    &trans    &trans  &trans    &trans  &kp LALT
+                                        &kp LGUI &kp BSPC &kp SPACE      &kp RET &kp LSHFT &kp HYP
                         >;
                 };
         };
