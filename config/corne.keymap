@@ -16,31 +16,30 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------
-// | TAB |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  ;  |  DEL |
-// | ESC |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |   '   |
-// | CTL |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H  |  ,  |  .  |  /  | ALT |
-//             | CMD | BSPC | SPC/UPR |   | ENT/LWR | SHFT  | HYP |
+// | TAB |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  ;  | DEL |
+// | E/C |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |  '  |
+// | HYP |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H  |  ,  |  .  |  /  | ALT |
+//               | CMD | SPC | TAB/UPR |   | ENT/LWR | BSPC | SHFT |
 
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp F &kp P &kp B      &kp J &kp L  &kp U     &kp Y   &kp SEMI   &kp DEL
-   &kp ESC   &kp A &kp R &kp S &kp T &kp G      &kp M &kp N  &kp E     &kp I   &kp O      &kp SQT
-   &kp LCTRL &kp Z &kp X &kp C &kp D &kp V      &kp K &kp H  &kp COMMA &kp DOT &kp FSLH   &kp LALT
-             &kp LGUI &kp BSPC &lt 2 SPACE      &lt 1 RET &kp LSHFT &kp HYP
+   &kp TAB        &kp Q &kp W &kp F &kp P &kp B      &kp J &kp L  &kp U     &kp Y   &kp SEMI   &kp DEL
+   &mt LCTRL ESC  &kp A &kp R &kp S &kp T &kp G      &kp M &kp N  &kp E     &kp I   &kp O      &kp SQT
+   &kp HYP        &kp Z &kp X &kp C &kp D &kp V      &kp K &kp H  &kp COMMA &kp DOT &kp FSLH   &kp LALT
+                   &kp LGUI &kp SPACE &lt 2 TAB      &lt 1 RET &kp BSPC &kp LSHFT
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  %  |  &  |  (  |  )  |  #  |   |  =  |  7  |  8  |  9  |  +  |   \  |
-// |  ESC |  $  |  @  |  {  |  }  |  !  |   |  *  |  4  |  5  |  6  |  0  |  "|" |
-// |  CTL |  _  |  ^  |  [  |  ]  |  `  |   |  /  |  1  |  2  |  3  |  -  |  ALT |
-//               | CMD | BSPC | SPC/UPR |   | ENT/LWR | SHFT  | HYP |
+// |  E/C |  $  |  @  |  {  |  }  |  !  |   |  *  |  4  |  5  |  6  |  0  |  "|" |
+// |  HYP |  _  |  ^  |  [  |  ]  |  `  |   |  /  |  1  |  2  |  3  |  -  |  ALT |
+//               | CMD | BSPC | TAB/UPR |   | ENT/LWR | SHFT  | HYP |
 
                         bindings = <
-   &kp TAB   &kp PRCNT &kp AMPS   &kp LPAR &kp RPAR &kp HASH         &kp EQUAL        &kp N7   &kp N8  &kp N9  &kp PLUS   &kp BSLH
-   &kp ESC   &kp DLLR  &kp AT     &kp LBRC &kp RBRC &kp EXCL         &kp KP_MULTIPLY  &kp N4   &kp N5  &kp N6  &kp N0     &kp PIPE
-   &kp LCTRL &kp UNDER &kp CARET  &kp LBKT &kp RBKT &kp GRAVE        &kp FSLH         &kp N1   &kp N2  &kp N3  &kp MINUS  &kp LALT
-                                  &kp LGUI &kp BSPC &kp SPACE        &kp RET &kp LSHFT &kp HYP
+   &kp TAB        &kp PRCNT &kp AMPS   &kp LPAR &kp RPAR &kp HASH         &kp EQUAL        &kp N7   &kp N8  &kp N9  &kp PLUS   &kp BSLH
+   &mt LCTRL ESC  &kp DLLR  &kp AT     &kp LBRC &kp RBRC &kp EXCL         &kp KP_MULTIPLY  &kp N4   &kp N5  &kp N6  &kp N0     &kp PIPE
+   &kp HYP        &kp UNDER &kp CARET  &kp LBKT &kp RBKT &kp GRAVE        &kp FSLH         &kp N1   &kp N2  &kp N3  &kp MINUS  &kp LALT
+                                        &kp LGUI &kp SPACE &kp TAB        &kp RET &kp BSPC &kp LSHFT
                         >;
                 };
 
@@ -52,10 +51,10 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
 
                         bindings = <
-   &kp TAB   &trans  &trans     &kp C_BRI_DN   &kp C_BRI_UP  &trans      &trans    &trans    &trans  &trans    &trans  &trans
-   &kp ESC   &trans  &kp C_MUTE &kp C_VOL_DN   &kp C_VOL_UP  &trans      &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT &trans  &trans
-   &kp LCTRL &trans  &kp C_PP   &kp C_PREV     &kp C_NEXT    &trans      &trans    &trans    &trans  &trans    &trans  &kp LALT
-                                        &kp LGUI &kp BSPC &kp SPACE      &kp RET &kp LSHFT &kp HYP
+   &kp TAB        &trans  &trans     &kp C_BRI_DN   &kp C_BRI_UP  &trans      &trans    &trans    &trans  &trans    &trans  &trans
+   &mt LCTRL ESC  &trans  &kp C_MUTE &kp C_VOL_DN   &kp C_VOL_UP  &trans      &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT &trans  &trans
+   &kp HYP        &trans  &kp C_PP   &kp C_PREV     &kp C_NEXT    &trans      &trans    &trans    &trans  &trans    &trans  &kp LALT
+                                            &kp LGUI &kp SPACE   &kp TAB      &kp RET &kp BSPC &kp LSHFT
                         >;
                 };
         };
