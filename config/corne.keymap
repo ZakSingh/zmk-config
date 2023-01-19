@@ -10,6 +10,9 @@
 
 #define HYP LS(LC(LA(LGUI)))
 
+&mt {
+    tapping-term-ms = <300>;
+};
 
 / {
         keymap {
