@@ -36,7 +36,7 @@
                         bindings = <
    &kp TILDE       &kp Q &kp W &kp F &kp P &kp B      &kp J &kp L  &kp U     &kp Y   &kp SEMI   &kp EXCL
    &mt LCTRL ESC  &kp A &kp R &kp S &kp T &kp G      &kp M &kp N  &kp E     &kp I   &kp O      &kp SQT
-   &kp HYP        &kp Z &kp X &kp C &kp D &kp V      &kp K &kp H  &kp COMMA &kp DOT &kp FSLH   &kp LALT
+   &kp LSHFT        &kp Z &kp X &kp C &kp D &kp V      &kp K &kp H  &kp COMMA &kp DOT &kp FSLH   &kp LALT
                    &kp HYP &gqt LGUI SPACE &lt 1 TAB      &lt 2 RET &mt LSHFT BSPC &kp HYP
                         >;
                 };
@@ -44,13 +44,13 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  %  |  &  |  (  |  )  |  #  |   |  =  |  7  |  8  |  9  |  +  |   \  |
 // |  E/C |  $  |  @  |  {  |  }  |  !  |   |  *  |  4  |  5  |  6  |  0  |  "|" |
-// |  HYP |  _  |  ^  |  [  |  ]  |  `  |   |  /  |  1  |  2  |  3  |  -  |  ALT |
+// |  LSHFT |  _  |  ^  |  [  |  ]  |  `  |   |  /  |  1  |  2  |  3  |  -  |  ALT |
 //               | CMD | BSPC | TAB/UPR |   | ENT/LWR | SHFT  | HYP |
 
                         bindings = <
    &kp TILDE       &kp PRCNT &kp AMPS   &kp LPAR &kp RPAR &kp HASH         &kp EQUAL        &kp N7   &kp N8  &kp N9  &kp PLUS   &kp BSLH
    &mt LCTRL ESC  &kp DLLR  &kp AT     &kp LBRC &kp RBRC &kp EXCL         &kp KP_MULTIPLY  &kp N4   &kp N5  &kp N6  &kp N0     &kp PIPE
-   &kp HYP        &kp UNDER &kp CARET  &kp LBKT &kp RBKT &kp GRAVE        &kp FSLH         &kp N1   &kp N2  &kp N3  &kp MINUS  &kp LALT
+   &kp LSHFT        &kp UNDER &kp CARET  &kp LBKT &kp RBKT &kp GRAVE        &kp FSLH         &kp N1   &kp N2  &kp N3  &kp MINUS  &kp LALT
                                         &kp HYP &gqt LGUI SPACE &kp TAB        &kp RET &mt LSHFT BSPC &kp HYP
                         >;
                 };
@@ -65,7 +65,7 @@
                         bindings = <
    &kp TAB        &trans  &trans     &kp C_BRI_DN   &kp C_BRI_UP  &trans      &trans    &trans    &trans  &trans    &trans  &trans
    &mt LCTRL ESC  &trans  &kp C_MUTE &kp C_VOL_DN   &kp C_VOL_UP  &trans      &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT &trans  &trans
-   &kp HYP        &trans  &kp C_PP   &kp C_PREV     &kp C_NEXT    &trans      &trans    &trans    &trans  &trans    &trans  &kp LALT
+   &kp LSHFT         &trans  &kp C_PP   &kp C_PREV     &kp C_NEXT    &trans      &trans    &trans    &trans  &trans    &trans  &kp LALT
                                             &kp HYP &gqt LGUI SPACE  &kp TAB      &kp RET &mt LSHFT BSPC &kp HYP
                         >;
                 };
