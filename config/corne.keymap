@@ -45,13 +45,13 @@
 // |  TAB |  %  |  &  |  (  |  )  |  #  |   |  =  |  7  |  8  |  9  |  +  |   \  |
 // |  E/C |  $  |  @  |  {  |  }  |  !  |   |  *  |  4  |  5  |  6  |  0  |  "|" |
 // |  LSHFT |  _  |  ^  |  [  |  ]  |  `  |   |  /  |  1  |  2  |  3  |  -  |  ALT |
-//               | CMD | BSPC | TAB/UPR |   | ENT/LWR | SHFT  | HYP |
+//               | CMD | BSPC | TAB/UPR |   | ENT/LWR | SHFT  | DOT |
 
                         bindings = <
    &kp TILDE       &kp PRCNT &kp AMPS   &kp LPAR &kp RPAR &kp HASH         &kp EQUAL        &kp N7   &kp N8  &kp N9  &kp PLUS   &kp BSLH
-   &mt LCTRL ESC  &kp DLLR  &kp AT     &kp LBRC &kp RBRC &kp EXCL         &kp KP_MULTIPLY  &kp N4   &kp N5  &kp N6  &kp N0     &kp PIPE
-   &kp LSHFT        &kp UNDER &kp CARET  &kp LBKT &kp RBKT &kp GRAVE        &kp FSLH         &kp N1   &kp N2  &kp N3  &kp MINUS  &kp LALT
-                                        &kp HYP &gqt LGUI SPACE &kp TAB        &kp RET &mt LSHFT BSPC &kp HYP
+   &mt LCTRL ESC  &kp DLLR  &kp AT     &kp LBRC &kp RBRC &kp EXCL         &kp KP_MULTIPLY  &kp N4   &kp N5  &kp N6  &kp N0     &kp COMMA
+   &kp LSHFT        &kp UNDER &kp CARET  &kp LBKT &kp RBKT &kp GRAVE        &kp FSLH         &kp N1   &kp N2  &kp N3  &kp MINUS  &kp PIPE
+                                        &kp HYP &gqt LGUI SPACE &kp TAB        &kp RET &mt LSHFT BSPC &kp DOT
                         >;
                 };
 
