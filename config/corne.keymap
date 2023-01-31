@@ -22,7 +22,7 @@
 
 / {
         behaviors {
-                GQT: GLOBAL-QUICK-TAP {
+                gqt: GLOBAL-QUICK-TAP {
                         compatible = "zmk,behavior-hold-tap";
                         label = "GLOBAL_QUICK_TAP";
                         #binding-cells = <2>;
