@@ -10,11 +10,6 @@
 
 #define HYP LS(LC(LA(LGUI)))
 
-#define KP_CAPW LGUI(LS(N3))
-#define KP_CPYW LGUI(LS(LC(N3))) 
-#define KP_CAPP LGUI(LS(N4))
-#define KP_CPYP LGUI(LS(LC(N4)))
-
 &lt {
     tapping-term-ms = <150>;
     quick-tap-ms = <150>;
@@ -72,7 +67,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
 
                         bindings = <
-   &kp TAB        &kp KP_CAPP  &kp KP_CPYP  &kp C_BRI_DN   &kp C_BRI_UP  &trans      &trans    &trans    &trans  &trans    &trans  &trans
+   &kp TAB        &trans &trans &kp C_BRI_DN   &kp C_BRI_UP  &trans      &trans    &trans    &trans  &trans    &trans  &trans
    &mt LCTRL ESC  &trans  &kp C_MUTE &kp C_VOL_DN   &kp C_VOL_UP  &trans      &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT &trans  &trans
    &kp LSHFT         &trans  &kp C_PP   &kp C_PREV     &kp C_NEXT    &trans      &trans    &trans    &trans  &trans    &trans  &kp LALT
                                             &kp HYP &gqt LGUI SPACE  &kp TAB      &kp RET &mt LSHFT BSPC &kp HYP
